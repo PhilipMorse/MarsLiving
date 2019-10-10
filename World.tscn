@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.105469, 0.012012, 0.00494385, 1, 0.402344, 0.159719, 0.0141449, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[node name="Ground" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+margin_top = -10.0
+margin_right = 2048.0
+margin_bottom = 1400.0
+texture = SubResource( 2 )
+stretch_mode = 2
